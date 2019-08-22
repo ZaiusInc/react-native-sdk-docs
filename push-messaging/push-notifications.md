@@ -1,6 +1,6 @@
 # Push Notifications
 
-In order to use Push Notifications as part of a Zaius campaign, your phone apps must be set up to recieve them. Detailed instructions about getting started with Zaius Push can be found on the Getting Started pages of the iOS and Android SDK documentation. Futher instructions about installing this React Native module in your app can be found in the [Installation instructions](installation.md).
+In order to use Push Notifications as part of a Zaius campaign, your phone apps must be set up to recieve them. Detailed instructions about getting started with Zaius Push can be found on the Getting Started pages of the iOS and Android SDK documentation. Futher instructions about installing this React Native module in your app can be found in the [Installation instructions](../installation.md).
 
 #### Multiple Sources
 
@@ -42,7 +42,7 @@ On Android, the notification will be shown regardless of app status.
 
 **Note:** This callback will always be called, even if the notification is not interacted with. The `notification` argument will reliably contain a field called `userInteraction` which will be `true` if the user has tapped on the notification and `false` otherwise. When in the foreground on iOS, the app will still receive a callback on this function, and the `userInteraction` field will be `false`.
 
-**Note:** When the user interacts with the notification, the SDK will [automatically queue an Event](events.md#automatic-events) that lets Zaius know that the interaction took place.
+**Note:** When the user interacts with the notification, the SDK will [automatically queue an Event](../analytics/events.md#automatic-events) that lets Zaius know that the interaction took place.
 
 #### onRegister
 
@@ -60,5 +60,5 @@ Zaius.configure({
 })
 ```
 
-**Note:** When this callback is invoked, the SDK will also [automatically queue an Event](events.md#automatic-events) to tell Zaius about this push token, so it knows where to send Pushes.
+**Note:** When this callback is invoked, the SDK will also [automatically queue an Event](../analytics/events.md#automatic-events) to tell Zaius about this push token, so it knows where to send Pushes.
 

@@ -6,7 +6,7 @@ Events are the main way that an app communicates with Zaius. You can find more a
 
 The main way of sending events to Zaius is with `Zaius.event()`.
 
-```text
+```typescript
 Zaius.event({
     type: string,
     action: string,

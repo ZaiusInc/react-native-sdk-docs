@@ -6,7 +6,7 @@ Customers are central to Zaius' operation. You can find out more about how they 
 
 In order for Zaius to operate, it's important to make sure that it is operating with the most relevant information it can. You can use `Zaius.customer()` to make sure you have good information about a Customer.
 
-```text
+```typescript
 Zaius.customer(
     {
         ... // identifiers
@@ -25,7 +25,7 @@ Attributes are bits of information about the customer, like first/last name, pho
 
 Zaius will use all information available to it in order to coalesce events into a single customer record when possible. This process can be aided by adding identifying information directly. This is done with `Zaius.identify()`
 
-```text
+```typescript
 Zaius.identify({
    ...
 })

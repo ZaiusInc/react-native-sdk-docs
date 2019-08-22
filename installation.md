@@ -6,7 +6,7 @@ This page will take you through the steps to set up the Zaius SDK module in your
 
 The Zaius SDK module was written using TypeScript and so is fully compatible with both JavaScript and TypeScript applications. If you are developing a new React Native app and wish to integrate with Zaius, it's recommended you use TypeScript.react-native init Project --template typescript
 
-```text
+```bash
 npm install --save @zaiusinc/react-native-sdk @react-native-community/async-storage react-native-push-notification
 ```
 
@@ -14,12 +14,12 @@ npm install --save @zaiusinc/react-native-sdk @react-native-community/async-stor
 
 For an iOS project you'll also need to run the following:
 
-```text
+```bash
 npm install --save @react-native-community/push-notification-ios
 cd <project>/ios && pod install
 ```
 
-```text
+```bash
 react-native link
 ```
 
@@ -29,7 +29,7 @@ After this, you will need to allow your app's Bundle ID to have the Push Notific
 
 Inside `<project>/android/app/src/main/AndroidManifest.xml`, integrate the following XML to allow proper permissions to allow the app to manage Push Notifications.
 
-```text
+```markup
 <receiver
      android:name="com.google.android.gms.gcm.GcmReceiver"
      android:exported="true"

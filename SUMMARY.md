@@ -1,11 +1,16 @@
 # Table of contents
 
-* [Zaius React Native SDK](README.md)
-* [Getting Started](getting-started.md)
+* [Getting Started](README.md)
 * [Installation](installation.md)
-* [Usage](usage.md)
-* [Events](events.md)
-* [Customers](customers.md)
-* [Push Notifications](push-notifications.md)
-* [Advanced Push Notifications](advanced-push-notifications.md)
+* [Configuration](configuration.md)
+
+## Analytics
+
+* [Events](analytics/events.md)
+* [Customers](analytics/customers.md)
+
+## Push Messaging
+
+* [Push Notifications](push-messaging/push-notifications.md)
+* [Advanced Push Notifications](push-messaging/advanced-push-notifications.md)
 
