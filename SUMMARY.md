@@ -1,13 +1,12 @@
 # Table of contents
 
 * [Getting Started](README.md)
-* [Installation](installation.md)
-* [Configuration](configuration.md)
+* [Install & Initialize](installation.md)
 
-## Analytics
+## Tagging
 
-* [Events](analytics/events.md)
-* [Customers](analytics/customers.md)
+* [Events](tagging/events.md)
+* [Customers](tagging/customers.md)
 
 ## Push Messaging
 
