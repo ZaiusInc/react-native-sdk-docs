@@ -111,9 +111,9 @@ The arguments of `configure` are as follows:
 Once you have the `Zaius` object from `configure()` the following functions are available on both the object returned from `Zaius.configure()` and as functions directly on the global `Zaius` object \(e.g. `Zaius.customer()`\).
 
 * `Zaius.getConfig()`: Returns the configuration that the `Zaius` object is using.
-* `Zaius.getVUID()`: Return the `VUID` that identifies the current user. See [VUIDs](tagging/customers.md#vuids) for more info.
+* `Zaius.getVUID()`: Return the `VUID` that identifies the current user. See [VUIDs](tagging/customers/#vuids) for more info.
 * `Zaius.anonymize()`: Generates a new VUID, effectively anonymizing the user.
 * `Zaius.event()`: Queues an event into the Event queue. See [Events](tagging/events.md) for more info.
-* `Zaius.customer()`: Updates information about this Customer with Zaius. See [Customers](tagging/customers.md#updating-customer-information) for more info.
-* `Zaius.identify()`: Updates Customer identification information. See [Customers](tagging/customers.md#updating-customer-identifiers) for more info.
+* `Zaius.customer()`: Updates information about this Customer with Zaius. See [Customers](tagging/customers/#updating-customer-information) for more info.
+* `Zaius.identify()`: Updates Customer identification information. See [Customers](tagging/customers/#updating-customer-identifiers) for more info.
 

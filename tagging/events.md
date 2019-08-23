@@ -21,7 +21,7 @@ Zaius.event({
 
 * `type`: The type of event. You can think of it as what the event is happening about. You can find more about this in the [Zaius Event Overview](https://developer.zaius.com/core-concepts/overview/events).
 * `action`: What the customer is doing that Zaius should be told about.
-* `identifiers`: Various bits of information that can identify a Customer. This will include things like the [VUID](customers.md), push token, or email. Values in this object should be strings.
+* `identifiers`: Various bits of information that can identify a Customer. This will include things like the [VUID](customers/), push token, or email. Values in this object should be strings.
 * `data`: Relevant data to the event. For example, the event sent when Push Notifications permission is granted will also contain the push token for the phone \(so Zaius can actually deliver notifications\). The values here should be strings.
 
 ### Event Queue

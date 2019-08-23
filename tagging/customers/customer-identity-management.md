@@ -1,10 +1,10 @@
 # Customer Identity Management
 
-Knowing who your customers are and what they are doing on your app is critical to proper engagement. Zaius' SDK lets you manage that identity. More information about the technical aspects of this can be found in the [Customer API reference](tagging/customers.md).
+Knowing who your customers are and what they are doing on your app is critical to proper engagement. Zaius' SDK lets you manage that identity. More information about the technical aspects of this can be found in the [Customer API reference](./).
 
 ### When to Identify
 
-When a Customer signs into your app, it appears to Zaius to be a new Customer. In order to make sure that the Customer is properly associated with all of their existing data, you should use [the `Zaius.identify()` function](tagging/customers.md#updating-customer-identifiers). This will let you associate a name or email address with the internal tracking info to get a more complete picture of who is using the app.
+When a Customer signs into your app, it appears to Zaius to be a new Customer. In order to make sure that the Customer is properly associated with all of their existing data, you should use [the `Zaius.identify()` function](./#updating-customer-identifiers). This will let you associate a name or email address with the internal tracking info to get a more complete picture of who is using the app.
 
 ### Internally, VUIDs
 

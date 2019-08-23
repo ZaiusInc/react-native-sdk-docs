@@ -2,7 +2,6 @@
 
 * [Getting Started](README.md)
 * [Install & Initialize](installation.md)
-* [Customer Identity Management](customer-identity-management.md)
 
 ## Push Messaging
 
@@ -12,5 +11,6 @@
 ## Tagging
 
 * [Events](tagging/events.md)
-* [Customers](tagging/customers.md)
+* [Customers](tagging/customers/README.md)
+  * [Customer Identity Management](tagging/customers/customer-identity-management.md)
 
