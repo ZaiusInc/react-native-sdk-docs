@@ -95,7 +95,7 @@ Zaius.configure({
 
 The arguments of `configure` are as follows:
 
-* `appId`: **\[Required\]** The App ID ad mentioned above, the Shortened Name of your project.
+* `appId`: **\[Required\]** The App ID as mentioned above, the Shortened Name of your project.
 * `apiKey`: **\[Required\]** The API Key from the Public tab in the APIs section of the Zaius app.
 * `appVersion`: The version of your app, sent with each request to help you keep track of which customers are using which version.
 * `baseUrl`: Where the Zaius API is located. This should not normally by changed.
@@ -103,7 +103,7 @@ The arguments of `configure` are as follows:
 * `onRegister`: A callback function that is called when permission for Push Notifications has been granted. Once this callback is called, everything is set up on the phone side for Pushes to work.
 * `platform`: Which platform the app is running on. Will be detected if it's not supplied.
 * `requestPermissions`: If this is `false`, then it is up to the app author to call `Zaius.requestPermission()` in order for Push Notifications to be initialized. See [Push Notifications](push-messaging/push-notifications.md) for more.
-* `senderID`: **\[Required for Android\]** Required for Push Notifications on Android.
+* `senderID`: **\[Required for Android\]** Required for Push Notifications on Android. The Sender ID is found in the `google-services.json` file you can obtain this file from Firebase by following [Google directions](https://support.google.com/firebase/answer/7015592?hl=en#android). The `Sender ID` is the value found at `project_info` -&gt; `project_number`.
 * `startQueue`: When set to true, the SDK will start processing the Event queue as soon as it can. See [Events](tagging/events.md) for more information about the Event queue. 
 
  The return type of `Zaius.configure` is a `Promise` and so it must be handled as a `Promise` or called from an `async` function.
@@ -112,7 +112,7 @@ Once you have the `Zaius` object from `configure()` the following functions are 
 
 * `Zaius.getConfig()`: Returns the configuration that the `Zaius` object is using.
 * `Zaius.getVUID()`: Return the `VUID` that identifies the current user. See [VUIDs](tagging/customers.md#vuids) for more info.
-* `Zaius.anonymize(`\): Generates a new VUID, effectively anonymizing the user.
+* `Zaius.anonymize()`: Generates a new VUID, effectively anonymizing the user.
 * `Zaius.event()`: Queues an event into the Event queue. See [Events](tagging/events.md) for more info.
 * `Zaius.customer()`: Updates information about this Customer with Zaius. See [Customers](tagging/customers.md#updating-customer-information) for more info.
 * `Zaius.identify()`: Updates Customer identification information. See [Customers](tagging/customers.md#updating-customer-identifiers) for more info.

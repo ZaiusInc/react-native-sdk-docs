@@ -35,3 +35,5 @@ The content of the document is fairly freeform, but will automatically have the 
 
 This function call is effectively the same as `Zaius.customer({...}, {})`
 
+One of the ways Zaius maintains a customer's identity through various email, name, phone number, etc changes is by using a unique identifier called the VUID. This value is maintained internally and is sent automatically with all requests. The VUID isn't normally visible to end users. The VUID isn't even really directly important to the users of the SDK except to know that it exists and that it is used to identify Customers across account updates.
+
