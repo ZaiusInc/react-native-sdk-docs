@@ -35,9 +35,3 @@ The content of the document is fairly freeform, but will automatically have the 
 
 This function call is effectively the same as `Zaius.customer({...}, {})`
 
-### VUIDs
-
-One of the ways Zaius maintains a customer's identity through various email, name, phone number, etc changes is by using a unique identifier that is sent with all requests. This is called the `VUID` and isn't normally visible to end users.
-
-However, if the customer ever wants to become anonymous and separate from previous data, they can anonymize their information with `Zaius.anonymize()`. This will regenerate a new VUID for them and effectively remove the link between any new events they may generate and any customer information they had previously stored.
-

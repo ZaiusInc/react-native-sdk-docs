@@ -2,6 +2,7 @@
 
 * [Getting Started](README.md)
 * [Install & Initialize](installation.md)
+* [Customer Identity Management](customer-identity-management.md)
 
 ## Push Messaging
 
